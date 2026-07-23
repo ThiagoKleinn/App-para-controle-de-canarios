@@ -12,7 +12,7 @@ export default function Layout({ children }) {
     return (
         <div className="app-layout">
             <header className="app-header">
-                <img src="/logo.png" alt="Logo" className="app-logo" />
+                <img src={logo} alt="Logo" className="app-logo" />
                 <span className="app-brand">Meus Pássaros</span>
             </header>
             <main className="page-content">{children}</main>
