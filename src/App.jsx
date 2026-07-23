@@ -12,7 +12,7 @@ export default function App() {
 
     if (session === undefined) {
         return (
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%' }}>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%', background: 'var(--bg)' }}>
                 <i className="ti ti-feather" style={{ fontSize: 32, color: 'var(--gold)', animation: 'spin 1s linear infinite' }} />
                 <style>{`@keyframes spin { to { transform: rotate(360deg) } }`}</style>
             </div>

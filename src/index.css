@@ -1,18 +1,18 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-    --bg:       #0f0f0f;
-    --surface:  #1a1a1a;
-    --surface2: #222222;
-    --border:   #2a2a2a;
-    --gold:     #c9a227;
-    --gold-dim: #2e1f0a;
-    --text:     #f0f0f0;
-    --muted:    #666666;
-    --green:    #4caf7d;
-    --green-bg: #0f2e1a;
-    --red:      #e05c5c;
-    --red-bg:   #2e0f0f;
+    --bg:       #f8f9fa;
+    --surface:  #ffffff;
+    --surface2: #f1f3f5;
+    --border:   #dee2e6;
+    --gold:     #339af0;
+    --gold-dim: #e7f5ff;
+    --text:     #212529;
+    --muted:    #868e96;
+    --green:    #40c057;
+    --green-bg: #ebfbee;
+    --red:      #fa5252;
+    --red-bg:   #fff5f5;
     --radius:   12px;
     --nav-h:    60px;
 }
@@ -149,7 +149,7 @@ html, body, #root {
     height: 48px;
     border-radius: 50%;
     background: var(--gold);
-    color: #111;
+    color: #fff;
     border: none;
     font-size: 24px;
     display: flex;
@@ -157,7 +157,7 @@ html, body, #root {
     justify-content: center;
     cursor: pointer;
     z-index: 99;
-    box-shadow: 0 2px 12px rgba(201,162,39,0.3);
+    box-shadow: 0 4px 12px rgba(51,154,240,0.3);
 }
 @media (max-width: 480px) { .fab { right: 16px; } }
 
@@ -187,7 +187,7 @@ html, body, #root {
     width: 100%;
     padding: 13px;
     background: var(--gold);
-    color: #111;
+    color: #fff;
     font-size: 15px;
     font-weight: 600;
     border: none;
@@ -268,7 +268,7 @@ html, body, #root {
 .sheet-overlay {
     position: fixed;
     inset: 0;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0,0,0,0.3);
     z-index: 200;
     display: flex;
     align-items: flex-end;
