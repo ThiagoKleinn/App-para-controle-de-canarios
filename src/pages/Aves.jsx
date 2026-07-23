@@ -54,7 +54,16 @@ export default function Aves() {
 
     async function salvar() {
         setLoading(true)
-        const payload = { ...form, gaiola_id: form.gaiola_id || null }
+        const payload = { 
+            ...form, 
+            gaiola_id:  form.gaiola_id || null,
+            nascimento: form.nascimento || null,
+            anilha:     form.anilha || null,
+            proprietario: form.proprietario || null,
+            contato:    form.contato || null,
+            registro:   form.registro || null,
+            obs:        form.obs || null
+        }
         if (detalhe) {
             await supabase.from('aves').update(payload).eq('id', detalhe.id)
         } else {
