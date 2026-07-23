@@ -19,13 +19,15 @@
 }
 
 .app-header {
-    height: 64px;
+    height: 100px;
     background: var(--surface);
     border-bottom: 1px solid var(--border);
     display: flex;
+    flex-direction: column;
     align-items: center;
-    padding: 0 16px;
-    gap: 12px;
+    justify-content: center;
+    padding: 10px 0;
+    gap: 4px;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -34,13 +36,12 @@
 .app-logo {
     height: 60px;
     width: 60px;
-    object-fit: cover;
-    margin-left: -10px;
+    object-fit: contain;
 }
 
 .app-brand {
     font-weight: 700;
-    font-size: 18px;
+    font-size: 16px;
     color: var(--gold);
     letter-spacing: -0.5px;
 }
