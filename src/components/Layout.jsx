@@ -13,7 +13,7 @@ export default function Layout({ children }) {
         <div className="app-layout">
             <header className="app-header">
                 <img src={logo} alt="Plantel Logo" className="app-logo" />
-                <span className="app-brand">Plantel</span>
+                <span className="app-brand">Meus Pássaros</span>
             </header>
             <main className="page-content">{children}</main>
             <nav className="bottom-nav">
