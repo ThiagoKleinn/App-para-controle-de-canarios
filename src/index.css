@@ -32,9 +32,10 @@
 }
 
 .app-logo {
-    height: 32px;
-    width: 32px;
+    height: 38px;
+    width: 38px;
     object-fit: contain;
+    border-radius: 8px;
 }
 
 .app-brand {
