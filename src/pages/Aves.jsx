@@ -183,7 +183,7 @@ export default function Aves() {
                             <label className="form-label">Observações</label>
                             <textarea className="form-textarea" value={form.obs} onChange={e => campo('obs', e.target.value)} placeholder="Observações adicionais..." />
                         </div>
-                        <button className="btn-primary" onClick={salvar} disabled={loading || !form.nome}>
+                        <button className="btn-primary" onClick={salvar} disabled={loading || !form.nome || !form.especie}>
                             {loading ? 'Salvando...' : detalhe ? 'Salvar alterações' : 'Cadastrar ave'}
                         </button>
                     </div>
