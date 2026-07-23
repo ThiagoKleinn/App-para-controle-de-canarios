@@ -55,10 +55,13 @@ export default function Aves() {
     async function salvar() {
         setLoading(true)
         const payload = { 
-            ...form, 
-            gaiola_id:  form.gaiola_id || null,
-            nascimento: form.nascimento || null,
+            nome:       form.nome,
+            especie:    form.especie,
             anilha:     form.anilha || null,
+            sexo:       form.sexo,
+            nascimento: form.nascimento || null,
+            status:     form.status,
+            gaiola_id:  form.gaiola_id || null,
             proprietario: form.proprietario || null,
             contato:    form.contato || null,
             registro:   form.registro || null,
