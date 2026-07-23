@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom'
+import logo from '../assets/logo.png'
 
 const NAV = [
     { to: '/aves',     icon: 'ti-feather',  label: 'Aves' },
@@ -10,6 +11,10 @@ const NAV = [
 export default function Layout({ children }) {
     return (
         <div className="app-layout">
+            <header className="app-header">
+                <img src={logo} alt="Plantel Logo" className="app-logo" />
+                <span className="app-brand">Plantel</span>
+            </header>
             <main className="page-content">{children}</main>
             <nav className="bottom-nav">
                 {NAV.map(({ to, icon, label }) => (
