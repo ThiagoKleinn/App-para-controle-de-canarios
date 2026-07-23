@@ -1,11 +1,11 @@
 import { Routes, Route, Navigate } from 'react-router-dom'
-import { useAuth } from './hooks/useAuth'
-import Login from './pages/Login'
-import Layout from './components/Layout'
-import Aves from './pages/Aves'
-import Gaiolas from './pages/Gaiolas'
-import Posturas from './pages/Posturas'
-import Agenda from './pages/Agenda'
+import { useAuth } from './hooks/useAuth.js'
+import Login from './pages/Login.jsx'
+import Layout from './components/Layout.jsx'
+import Aves from './pages/Aves.jsx'
+import Gaiolas from './pages/Gaiolas.jsx'
+import Posturas from './pages/Posturas.jsx'
+import Agenda from './pages/Agenda.jsx'
 
 export default function App() {
     const session = useAuth()
