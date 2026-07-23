@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom'
+import logo from '../assets/logo.png'
 
 const NAV = [
     { to: '/aves',     icon: 'ti-feather',  label: 'Aves' },
@@ -11,9 +12,7 @@ export default function Layout({ children }) {
     return (
         <div className="app-layout">
             <header className="app-header">
-                <div className="app-logo-icon">
-                    <i className="ti ti-feather" />
-                </div>
+                <img src={logo} alt="Logo" className="app-logo" />
                 <span className="app-brand">Meus Pássaros</span>
             </header>
             <main className="page-content">{children}</main>
